@@ -25,12 +25,13 @@ const OnboardingScreen = () => {
         keyExtractor={item => item.id}
         onScroll={e => {
           const index = e.nativeEvent.contentOffset.x / width;
-          setCurrentIndex(Math.ceil(index));
+          setCurrentIndex(Math.round(index));
         }}
       />
       <View style={styles.dotList}>
         {data.map((item, index) => (
           <View
+            key={index}
             style={[
               styles.dotContainer,
               {

@@ -3,6 +3,9 @@ export const Colors = {
   whiteColor: '#FFF',
   primaryTextColor: '#1F1F39',
   secondaryTextColor: '#858597',
+  bannerColor: '#FFE7EE',
+  tagColor: '#FFD301',
+  favouriteColor: '#FF6905',
 };
 
 export const onboardingData = [

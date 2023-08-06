@@ -2,10 +2,9 @@ import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import React from 'react';
 import {Colors} from '../constants';
 
-const PrimaryButton = ({title, width}) => {
+const FavouriteButton = ({title}) => {
   return (
-    <TouchableOpacity
-      style={[styles.container, {width: width === undefined ? 160 : width}]}>
+    <TouchableOpacity style={styles.container}>
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
   );
@@ -14,17 +13,17 @@ const PrimaryButton = ({title, width}) => {
 const styles = StyleSheet.create({
   container: {
     height: 50,
-    width: 160,
-    backgroundColor: Colors.primaryBgColor,
+    width: 100,
+    backgroundColor: Colors.bannerColor,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
   },
   text: {
-    color: Colors.whiteColor,
+    color: Colors.favouriteColor,
     fontFamily: 'Poppins-Regular',
     fontSize: 16,
   },
 });
 
-export default PrimaryButton;
+export default FavouriteButton;
