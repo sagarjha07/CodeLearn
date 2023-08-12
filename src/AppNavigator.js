@@ -5,6 +5,8 @@ import HomeScreen from './screens/HomeScreen';
 import SplashScreen from './screens/SplashScreen';
 import OnboardingScreen from './screens/OnboardingScreen';
 import SingleCourseScreen from './screens/SingleCourseScreen';
+import LoginScreen from './screens/LoginScreen';
+import SignupScreen from './screens/SignupScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +14,11 @@ function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="signup"
+          component={SignupScreen}
+          options={navigationOptions}
+        />
         <Stack.Screen
           name="course-details"
           component={SingleCourseScreen}
@@ -34,12 +41,7 @@ function AppNavigator() {
         />
         <Stack.Screen
           name="login"
-          component={HomeScreen}
-          options={navigationOptions}
-        />
-        <Stack.Screen
-          name="signup"
-          component={HomeScreen}
+          component={LoginScreen}
           options={navigationOptions}
         />
       </Stack.Navigator>

@@ -6,6 +6,8 @@ export const Colors = {
   bannerColor: '#FFE7EE',
   tagColor: '#FFD301',
   favouriteColor: '#FF6905',
+  grayColor: '#F0F0F2',
+  borderColor: '#B8B8D2',
 };
 
 export const onboardingData = [
