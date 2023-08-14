@@ -8,6 +8,7 @@ export const Colors = {
   favouriteColor: '#FF6905',
   grayColor: '#F0F0F2',
   borderColor: '#B8B8D2',
+  searchContainer: '#F4F3FD',
 };
 
 export const onboardingData = [
